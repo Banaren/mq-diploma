@@ -23,24 +23,35 @@
 .poput-fixed {
   position: fixed;
   display: flex;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   z-index: 50;
 }
-.content {
-  z-index: 1;
+.poput-fixed::after {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 45;
 }
 .container-poput {
   position: relative;
-  width: 88%;
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   background-color: #ffffff;
-  z-index: 5;
+  z-index: 50;
+}
+.content {
+  z-index: 1;
 }
 .poput-title{
   font-family: Bold;
@@ -399,6 +410,7 @@
 }
 .publication-image {
   width: 100%;
+  background-color: #eeeeee;
 }
 .publication-info {
   margin-top: 6px;
@@ -491,6 +503,9 @@
 
 .container-post-date-name{
   margin-left: 20px;
+}
+.post-image {
+  background-color: #eeeeee;
 }
 
 .post-date{
@@ -630,6 +645,7 @@
 }
 .product-preview {
   width: 100%;
+  background-color: #eeeeee;
   z-index: -1;
   margin-right: auto;
   margin-left: auto;
@@ -849,20 +865,35 @@
   }
 }
 @media (min-width: 641px) and (max-width: 1200px) {
+  .poput-fixed {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+  .poput-fixed::after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 45;
+  }
+
+  .container-poput {
+    position: relative;
+    width: 350px;
+    margin-top: 0;
+    background-color: #ffffff;
+    z-index: 50;
+  }
   .headline {
     background-image: url("../images/banner-bg-tablet.jpg");
-  }
-  .headline::after {
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background: #000000;
-    opacity: 0.5;
   }
   .container-logo-and-menu {
     justify-content: space-between;
@@ -960,6 +991,33 @@
   }
 }
 @media (min-width: 1201px) {
+  .poput-fixed {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+  .poput-fixed::after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 45;
+  }
+
+  .container-poput {
+    position: relative;
+    width: 350px;
+    margin-top: 0;
+    background-color: #ffffff;
+    z-index: 50;
+  }
   .headline {
     min-height: 450px;
     background-image: url("../images/banner-bg.jpg");
