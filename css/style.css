@@ -17,10 +17,10 @@
   padding: 0;
   box-sizing: border-box;
   }
-.poput {
+.popup {
   display: none;
 }
-.poput-fixed {
+.popup-fixed {
   position: fixed;
   display: flex;
   width: 100vw;
@@ -29,7 +29,7 @@
   align-items: center;
   z-index: 50;
 }
-.poput-fixed::after {
+.popup-fixed::after {
   content: "";
   display: block;
   position: fixed;
@@ -39,7 +39,7 @@
   opacity: 0.5;
   z-index: 45;
 }
-.container-poput {
+.container-popup {
   position: relative;
   margin-left: 15px;
   margin-right: 15px;
@@ -53,7 +53,7 @@
 .content {
   z-index: 1;
 }
-.poput-title{
+.popup-title{
   font-family: Bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
   padding-bottom: 30px;
 }
 
-.poput-title::after{
+.popup-title::after{
   content: "";
   position: absolute;
   display: block;
@@ -98,13 +98,13 @@
   width: 1.4em;
   height: 0.2em;
 }
-.form-poput-title {
+.form-popup-title {
   display: inline-block;
   font-family: Regular;
   font-size: 13px;
   padding-bottom: 7px;
 }
-.poput-select {
+.popup-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url("../svg/form-arrows.svg");
@@ -112,7 +112,6 @@
   background-position: right 10px center;
   background-size: 10px;
   display: inline-block;
-  box-sizing: border-box;
   width: 100%;
   height: 48px;  
   padding-left: 10px;
@@ -131,7 +130,7 @@
   color: #b59f5b;
   position: right 5px center;
 }
-.container-poput-radio {
+.container-popup-radio {
   display: flex;
 }
 .form-radio {
@@ -170,7 +169,7 @@
 .form-radio input[type=radio]:checked + label:before {
   background-image: url(../svg/form-circle.svg);
 }
-.poput-text {
+.popup-text {
   width: 100%;
   border: 1px solid #f9f9f9;
   background-color: #f9f9f9;
@@ -193,6 +192,11 @@
   background-color: #b59f5b;
   margin-top: 18px;
 }
+.button-submit:hover {
+  color: #b59f5b;
+  background-color: #ffffff;
+}
+
 
 
 
@@ -402,18 +406,13 @@
   margin-left: 15px;
   margin-right: 15px;
 }
-.publication {
-  margin-top: 45px;
-}
+
 .publication:nth-child(n+2){
   margin-top: 35px;
 }
 .publication-image {
   width: 100%;
   background-color: #f4f7f6;
-}
-.publication-info {
-  margin-top: 6px;
 }
 .publication-name {
   margin-top: 2px;
@@ -441,6 +440,9 @@
   line-height: 1.25;
   color: #0f0d0e;
 }
+.publication-name-link:hover {
+  color: #b59f5b;
+}
 .publication-date-author{
   display: flex;
   margin-top: 15px;
@@ -465,9 +467,6 @@
 }
 
 
-.sidebar {
-  margin-top: 45px; 
-}
 .sidebar-title{
   font-family: Bold;
   font-size: 16px;
@@ -522,6 +521,9 @@
   text-transform: uppercase;
   color: #000000;
 }
+.post-name-link:hover {
+  color: #b59f5b;
+}
 
 .search{
   display: flex;
@@ -532,6 +534,7 @@
   flex-grow: 1;
 }
 .search-svg {
+  fill: #ffffff;
   padding-top: 4px;
   width: 18px;
   height: 18px;
@@ -550,9 +553,18 @@
 .query-button{
   width: 48px;
   height: 48px;
+
   border: 1px solid #b59f5b;
   background-color: #b59f5b;
   cursor: pointer;
+}
+.query-button:hover {
+  background-color: #ffffff;
+}
+.query-button:hover .search-svg{
+  fill: #b59f5b;
+  width: 18px;
+  height: 18px;
 }
 
 .sidebar-search-container{
@@ -571,7 +583,10 @@
   height: 48px;
   background-color: #f4f7f6;
 }
-.subscription-button{
+.email-field:focus {
+  border: 1px solid #b59f5b;
+}
+.subscription-button {
   display: block;
   width: 100%;
   height: 48px;
@@ -586,48 +601,58 @@
   background-color: #b59f5b;
   margin-top: 18px;
 }
+.subscription-button:hover {
+  color: #b59f5b;
+  background-color: #ffffff;
+}
 
 
 
 
-.container-sidebar-title-tags{
+.container-sidebar-title-tags {
   margin-top: 43px;
   margin-bottom: 30px;
 }
 
-.sidebar-tags-list{
+.sidebar-tags-list {
   list-style-type: none;
 }
-.sidebar-tags-list-item{
+.sidebar-tags-list-item {
   display: inline-block;
   border: 3px solid #eeeeee;
   padding: 5px 6px;
   margin: 2px;
 }
-.sidebar-tags-list-item-link{
+.sidebar-tags-list-item-link {
   font-family: Bold;
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
   color: #0f0d0e;
 }
+.sidebar-tags-list-item-link:hover {
+  color: #b59f5b;
+}
 
-.container-sidebar-themes-title{
+.container-sidebar-themes-title {
   margin-top: 35px;
   margin-bottom: 18px;
 }
 .sidebar-themes-list{
   list-style-type: none;
 }
-.sidebar-theme-list-item{
+.sidebar-theme-list-item {
   border-bottom: 1px solid #eeeeee;
   padding: 11px 0;
 }
-.sidebar-theme-list-item-link{
+.sidebar-theme-list-item-link {
   font-family: Bold;
   font-size: 14px;
   text-decoration: none;
   color: #0f0d0e;
+}
+.sidebar-theme-list-item-link:hover {
+  color: #b59f5b;
 }
 .degree{
   font-family: Bold;
@@ -654,9 +679,8 @@
 .product-info {
   border: 3px solid #b59f5b;
   margin: -35px -20px -30px -20px;
-  padding: 55px 25px 25px;
+  padding: 45px 15px 15px;
   z-index: 1;
-  align-items: stretch;
 }
 
 .our-products-title{
@@ -679,9 +703,6 @@
   margin-top: 30px;  
 }
 .products {
-  margin-top: 45px;
-  padding-left: 35px;
-  padding-right: 35px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -698,8 +719,10 @@
   text-transform: uppercase;
   color: #000000;
 }
+.product-name-link:hover {
+  color: #b59f5b;
+}
 .product-description {
-  margin-top: 15px;
   font-family: Regular;
   font-size: 15px;
   text-decoration: none;
@@ -739,6 +762,10 @@
   
   border: 1px solid #b59f5b;
   background-color: #b59f5b;
+}
+.product-button:hover{
+  color: #b59f5b;
+  background-color: #ffffff;
 }
 
 .sepulchre{
@@ -861,12 +888,16 @@
     margin-top: 3px;
   }
   .publication {
+    margin-top: 45px;
     padding-bottom: 25px;
     border-bottom: 3px solid #eeeeee;
   }
+  .sidebar {
+    margin-top: 45px; 
+  }
 }
 @media (min-width: 641px) and (max-width: 1200px) {
-  .poput-fixed {
+  .popup-fixed {
     position: fixed;
     display: flex;
     width: 100vw;
@@ -875,7 +906,7 @@
     align-items: center;
     z-index: 50;
   }
-  .poput-fixed::after {
+  .popup-fixed::after {
     content: "";
     display: block;
     position: fixed;
@@ -886,7 +917,7 @@
     z-index: 45;
   }
 
-  .container-poput {
+  .container-popup {
     position: relative;
     width: 350px;
     margin-top: 0;
@@ -987,12 +1018,9 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  .product-info {
-    min-height: 283px;
-  }
 }
 @media (min-width: 1201px) {
-  .poput-fixed {
+  .popup-fixed {
     position: fixed;
     display: flex;
     width: 100vw;
@@ -1001,7 +1029,7 @@
     align-items: center;
     z-index: 50;
   }
-  .poput-fixed::after {
+  .popup-fixed::after {
     content: "";
     display: block;
     position: fixed;
@@ -1012,7 +1040,7 @@
     z-index: 45;
   }
 
-  .container-poput {
+  .container-popup {
     position: relative;
     width: 350px;
     margin-top: 0;
@@ -1020,8 +1048,11 @@
     z-index: 50;
   }
   .headline {
-    min-height: 450px;
     background-image: url("../images/banner-bg.jpg");
+    padding-top: 28px;
+  }
+  .header-burger {
+    display: none;
   }
   .container-logo-and-menu {
     justify-content: space-between;
@@ -1031,11 +1062,10 @@
   }
   .logo-image {
     width: 180px;
-    padding-top: 28px;
   }
   .menu{
     display: flex;
-    padding-top: 39px;
+    padding-top: 10px;
   }
   .headline-title {
     margin-top: 101px;
@@ -1058,8 +1088,11 @@
     width: 25%;
   }
   .trend:nth-child(n+2) {
-    width: calc(25%-4px);
+    width: calc (25%-4px);
     margin-left: 4px;
+  }
+  .trend-name-link {
+    font-size: 20px;
   }
   .container-trends {
     display: flex;
@@ -1072,10 +1105,12 @@
     margin-right: auto;
     width: 1170px;
   }
+  .publications {
+    width: 815px;
+  }
   .publication{
     display: flex;
     justify-content: space-between;
-    width: 815px;
   }
   .publication:nth-child(n+2){
     margin-top: 58px;
@@ -1090,11 +1125,31 @@
     width: 400px;
     padding-right: 60px;
   }
+  .publication-date-author {
+    margin-top: 25px;
+  }
+  .publication-description {
+    margin-top: 45px;
+  }
   .sidebar{
     width: 273px;
   }
   .query-field {
     width: 225px;
+  }
+  .sidebar-search-container {
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+  .container-sidebar-title-tags {
+    margin-top: 55px;
+    margin-bottom: 33px;
+  }
+  .sidebar-title {
+    font-size: 14px;
+  }
+  .container-our-products-title {
+    margin-top: 55px;
   }
   .our-products-title {
     font-size: 20px;
@@ -1102,15 +1157,15 @@
   .products {
     display: flex;
     align-items: baseline;
-    width: 1170px;
+    width: 1250px;
   }
   .product {
-    width: 33.3%;
-    padding-left: 30px;
-    padding-right: 30px;
+    flex: 1 1 33.333%;
+    padding-left: 59px;
+    padding-right: 59px;
   }
-  .product-info {
-    min-height: 283px;
+  .product-name-link {
+    font-size: 20px;
   }
   .sepulchre {
     margin-left: auto;

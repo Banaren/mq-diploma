@@ -10,19 +10,19 @@
 <body>
 
 
-    <div class="poput">
-      <div class="poput-fixed">
-        <div class="container-poput">        
-          <div class="container-poput-title">
-            <h2 class="poput-title">
+    <div class="popup">
+      <div class="popup-fixed">
+        <div class="container-popup">        
+          <div class="container-popup-title">
+            <h2 class="popup-title">
               Ваш Фидбек
             </h2>
           </div>
-          <form class="form-poput">
-            <div class="cotainer-poput-select">
+          <form class="form-popup">
+            <div class="cotainer-popup-select">
               <label class="select-group">
-                <span class="form-poput-title">Как часто вы заходите на сайт?</span>
-                <select class="poput-select" name="period">
+                <span class="form-popup-title">Как часто вы заходите на сайт?</span>
+                <select class="popup-select" name="period">
                   <svg class="select-form-arrows" width="174" height="296" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z" fill="#B59F5B"/></svg>
                   <option class="select" value="day" selected>Почти каждый день</option>
                   <option class="select" value="week">Раз в неделю</option>
@@ -30,8 +30,8 @@
                 </select>
               </label>          
             </div>
-            <span class="form-poput-title">Вы подписаны на e-mail рассылку?</span>
-            <div class="container-poput-radio">
+            <span class="form-popup-title">Вы подписаны на e-mail рассылку?</span>
+            <div class="container-popup-radio">
               <div class="form-radio">
                 <input id="radio-1" type="radio" name="radio" value="Да" checked>
                 <label for="radio-1">Да</label>
@@ -43,11 +43,11 @@
               </div>
             </div>
           
-            <div class="container-poput-text">
-              <span class="form-poput-title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-              <input class="poput-text" type="text" name="text" placeholder="Может больше рецептов?">          
+            <div class="container-popup-text">
+              <span class="form-popup-title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+              <input class="popup-text" type="text" name="text" placeholder="Может больше рецептов?">          
             </div>
-            <div class="poput-button-submit">
+            <div class="popup-button-submit">
               <button class="button-submit" type="submit">Отправить</button>
             </div>
           </form>
@@ -421,165 +421,178 @@
         <h2 class="sidebar-title">Новые посты</h2>
         </div>
         
-        <ul class="sidebar-posts-list">
-          <li class="sidebar-posts-list-item">
-            <div class="post-pic">
-            <img class="post-image"
-               src="../mq-diploma/images/2.jpg"
-               alt="Картинка, потерялась">
-            </div>
-         
-            <div class="container-post-date-name">
-              <div class="post-date">14 июня 2019</div>  
-              <h3 class="post-name">
-              <a class="post-name-link" href="#0">10 мест, ради которых стоит проснуться</a>
-              </h3>
-            </div>        
-          </li>
-          
-          <li class="sidebar-posts-list-item">
-            <div class="post-pic">
-            <img class="post-image"
-               src="../mq-diploma/images/7.jpg"
-               alt="Картинка, потерялась">
-            </div>
-         
-            <div class="container-post-date-name">
-              <div class="post-date">14 июня 2019</div>
-              <h3 class="post-name">
-              <a class="post-name-link" href="#0">Йога для домашних</a>
-              </h3>
-            </div>
-          </li>
-          
-          <li class="sidebar-posts-list-item">
-            <div class="post-pic">
-            <img class="post-image"
-               src="../mq-diploma/images/45.jpg"
-               alt="Картинка, потерялась">
-            </div>
-         
-            <div class="container-post-date-name">
-              <div class="post-date">14 июня 2019</div>
-              <h3 class="post-name">
-              <a class="post-name-link" href="#0">Как мы превратили классное место в балкон</a>
-              </h3>
-            </div>
-          </li>
-          
-          <li class="sidebar-posts-list-item">
-            <div class="post-pic">
-            <img class="post-image"
-               src="../mq-diploma/images/151.jpg"
-               alt="Картинка, потерялась">
-            </div>
-         
-            <div class="container-post-date-name">
-              <div class="post-date">14 июня 2019</div>
-              <h3 class="post-name">
-              <a class="post-name-link" href="#0">Кулинарный подход к науке</a>
-              </h3>
-            </div>
-          </li>
-          
-          <li class="sidebar-posts-list-item">
-            <div class="post-pic">
-            <img class="post-image"
-               src="../mq-diploma/images/501.jpg"
-               alt="Картинка, потерялась">
-            </div>
-         
-            <div class="container-post-date-name">
-              <div class="post-date">14 июня 2019</div>
-              <h3 class="post-name">
-              <a class="post-name-link" href="#0">Лучшие прически для распущенных волос</a>
-              </h3>
-            </div>
-         </li>           
-        </ul>
-        
-        
-        
-        <div class="search-container">
-          <form class="search">
-            <label class="search-group">
-             <span class="visually-hidden">Поле поиска</span>
-             <input class="query-field" name="query" placeholder="Найти..." required>
-            </label>
-            <button class="query-button">
-              <span class="visually-hidden">Кнопка поиска</span>
-              <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 512 512"><g clip-path="url(#clip0)"><path fill="#fff" stroke="#B59F5B" d="M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 122.192 62.271 206.72s68.765 153.293 153.293 153.293 153.293-68.765 153.293-153.293z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs></svg>
-            </button>
-          </form>
-        </div>
-        
-        <div class="search-container">
-          <div class="sidebar-search-container">
-          <h2 class="sidebar-title">Рассылка</h2>
-          </div>
-          <form class="subscription">
-            <label class="search-group">
-             <span class="visually-hidden">Поле введения email-адреса</span>
-             <input class="email-field" name="email" placeholder="Ваш email-адрес" required>
-              </label>
-            <button class="subscription-button">Подписаться</button>
-          </form>
-          
-          <div class="container-sidebar-tags">
-              <div class="container-sidebar-title-tags">
-              <h2 class="sidebar-title">Теги</h2>
+        <section class="sidebar-section">
+          <ul class="sidebar-posts-list">
+            <li class="sidebar-posts-list-item">
+              <div class="post-pic">
+              <img class="post-image"
+                 src="../mq-diploma/images/2.jpg"
+                 alt="Картинка, потерялась">
               </div>
-              <ul class="sidebar-tags-list">
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Fashion</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Music</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Lifestyle</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Art</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Interior</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Travel</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Food</a>
-                </li>
-                <li class="sidebar-tags-list-item">
-                  <a class="sidebar-tags-list-item-link" href="#0">Health</a>
-                </li>
-              </ul>
+           
+              <div class="container-post-date-name">
+                <div class="post-date">14 июня 2019</div>  
+                <h3 class="post-name">
+                <a class="post-name-link" href="#0">10 мест, ради которых стоит проснуться</a>
+                </h3>
+              </div>        
+            </li>
+            
+            <li class="sidebar-posts-list-item">
+              <div class="post-pic">
+              <img class="post-image"
+                 src="../mq-diploma/images/7.jpg"
+                 alt="Картинка, потерялась">
+              </div>
+           
+              <div class="container-post-date-name">
+                <div class="post-date">14 июня 2019</div>
+                <h3 class="post-name">
+                <a class="post-name-link" href="#0">Йога для домашних</a>
+                </h3>
+              </div>
+            </li>
+            
+            <li class="sidebar-posts-list-item">
+              <div class="post-pic">
+              <img class="post-image"
+                 src="../mq-diploma/images/45.jpg"
+                 alt="Картинка, потерялась">
+              </div>
+           
+              <div class="container-post-date-name">
+                <div class="post-date">14 июня 2019</div>
+                <h3 class="post-name">
+                <a class="post-name-link" href="#0">Как мы превратили классное место в балкон</a>
+                </h3>
+              </div>
+            </li>
+            
+            <li class="sidebar-posts-list-item">
+              <div class="post-pic">
+              <img class="post-image"
+                 src="../mq-diploma/images/151.jpg"
+                 alt="Картинка, потерялась">
+              </div>
+           
+              <div class="container-post-date-name">
+                <div class="post-date">14 июня 2019</div>
+                <h3 class="post-name">
+                <a class="post-name-link" href="#0">Кулинарный подход к науке</a>
+                </h3>
+              </div>
+            </li>
+            
+            <li class="sidebar-posts-list-item">
+              <div class="post-pic">
+              <img class="post-image"
+                 src="../mq-diploma/images/501.jpg"
+                 alt="Картинка, потерялась">
+              </div>
+           
+              <div class="container-post-date-name">
+                <div class="post-date">14 июня 2019</div>
+                <h3 class="post-name">
+                <a class="post-name-link" href="#0">Лучшие прически для распущенных волос</a>
+                </h3>
+              </div>
+           </li>           
+          </ul>
+        </section>
+        
+        
+        
+        <section class="sidebar-section">
+          <div class="search-container">
+            <form class="search">
+              <label class="search-group">
+               <span class="visually-hidden">Поле поиска</span>
+               <input class="query-field" name="query" placeholder="Найти..." required>
+              </label>
+              <button class="query-button">
+                <span class="visually-hidden">Кнопка поиска</span>
+                <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <g clip-path="url(#clip0)">
+                    <path stroke="#B59F5B" d="M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 122.192 62.271 206.72s68.765 153.293 153.293 153.293 153.293-68.765 153.293-153.293z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs></svg>
+              </button>
+            </form>
           </div>
-          
-          <div class="container-sidebar-themes">
-            <div class="container-sidebar-themes-title">
-            <h2 class="sidebar-title">Темы</h2>
+        </section>
+        
+        
+        <section class="sidebar-section">
+          <div class="sidebar-search-container">
+            <h2 class="sidebar-title">Рассылка</h2>
             </div>
-              <ul class="sidebar-themes-list">
-                <li class="sidebar-theme-list-item">
-                  <a class="sidebar-theme-list-item-link" href="#0">Красота</a><span class="degree">12</span>
-                <li class="sidebar-theme-list-item">
-                  <a class="sidebar-theme-list-item-link" href="#0">Здоровье</a><span class="degree">4</span>
-                </li>
-                <li class="sidebar-theme-list-item">
-                  <a class="sidebar-theme-list-item-link" href="#0">Образ жизни</a><span class="degree">145</span>
-                </li>
-                <li class="sidebar-theme-list-item">
-                  <a class="sidebar-theme-list-item-link" href="#0">Музыка</a><span class="degree">28</span>
-                </li>
-                <li class="sidebar-theme-list-item">
-                  <a class="sidebar-theme-list-item-link" href="#0">Спорт</a><span class="degree">62</span>
-                </li>
-                <li class="sidebar-theme-list-item">
-                  <a class="sidebar-theme-list-item-link" href="#0">Йога</a><span class="degree">8</span>
-                </li>
-          </div>
+            <form class="subscription">
+              <label class="search-group">
+               <span class="visually-hidden">Поле введения email-адреса</span>
+               <input class="email-field" name="email" placeholder="Ваш email-адрес" required>
+                </label>
+              <button class="subscription-button">Подписаться</button>
+            </form>
+        </section>
+          
+        <section class="sidebar-section">
+          <div class="container-sidebar-tags">
+            <div class="container-sidebar-title-tags">
+            <h2 class="sidebar-title">Теги</h2>
+            </div>
+            <ul class="sidebar-tags-list">
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Fashion</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Music</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Lifestyle</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Art</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Interior</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Travel</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Food</a>
+              </li>
+              <li class="sidebar-tags-list-item">
+                <a class="sidebar-tags-list-item-link" href="#0">Health</a>
+              </li>
+            </ul>
+        </div>
+        </section>
+          
+          
+          <section class="sidebar-themes">
+            <div class="container-sidebar-themes">
+              <div class="container-sidebar-themes-title">
+              <h2 class="sidebar-title">Темы</h2>
+              </div>
+                <ul class="sidebar-themes-list">
+                  <li class="sidebar-theme-list-item">
+                    <a class="sidebar-theme-list-item-link" href="#0">Красота</a><span class="degree">12</span>
+                  <li class="sidebar-theme-list-item">
+                    <a class="sidebar-theme-list-item-link" href="#0">Здоровье</a><span class="degree">4</span>
+                  </li>
+                  <li class="sidebar-theme-list-item">
+                    <a class="sidebar-theme-list-item-link" href="#0">Образ жизни</a><span class="degree">145</span>
+                  </li>
+                  <li class="sidebar-theme-list-item">
+                    <a class="sidebar-theme-list-item-link" href="#0">Музыка</a><span class="degree">28</span>
+                  </li>
+                  <li class="sidebar-theme-list-item">
+                    <a class="sidebar-theme-list-item-link" href="#0">Спорт</a><span class="degree">62</span>
+                  </li>
+                  <li class="sidebar-theme-list-item">
+                    <a class="sidebar-theme-list-item-link" href="#0">Йога</a><span class="degree">8</span>
+                  </li>
+            </div>
+          </section>          
       </aside>
     </div>
 
@@ -591,9 +604,9 @@
         <section class="product">
           <div class="pic">
             <picture class="product-preview">
-              <source media="(max-width: 640px)" srcset="../mq-diploma/images/shop-item-mobile1.jpg">
-              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="../mq-diploma/images/shop-item-tablet1.jpg">
-              <source media="(min-width: 1201px)" srcset="../mq-diploma/images/shop-item-desk1.jpg">
+              <source class="product-img" media="(max-width: 640px)" srcset="../mq-diploma/images/shop-item-mobile1.jpg">
+              <source class="product-img" media="(min-width: 641px) and (max-width: 1200px)" srcset="../mq-diploma/images/shop-item-tablet1.jpg">
+              <source class="product-img" media="(min-width: 1201px)" srcset="../mq-diploma/images/shop-item-desk1.jpg">
               <img class="product-img" src="../mq-diploma/images/shop-item-desk1.jpg" alt="Подушки на диван">
             </picture>
           </div>          
@@ -623,9 +636,9 @@
         <section class="product">
           <div class="pic">
             <picture class="product-preview">
-              <source media="(max-width: 640px)" srcset="../mq-diploma/images/shop-item-mobile2.jpg">
-              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="../mq-diploma/images/shop-item-tablet2.jpg">
-              <source media="(min-width: 1201px)" srcset="../mq-diploma/images/shop-item-desk2.jpg">
+              <source class="product-img" media="(max-width: 640px)" srcset="../mq-diploma/images/shop-item-mobile2.jpg">
+              <source class="product-img" media="(min-width: 641px) and (max-width: 1200px)" srcset="../mq-diploma/images/shop-item-tablet2.jpg">
+              <source class="product-img" media="(min-width: 1201px)" srcset="../mq-diploma/images/shop-item-desk2.jpg">
               <img class="product-img" src="../mq-diploma/images/shop-item-desk2.jpg" alt="Кукла Зайчик">
             </picture>
           </div>          
@@ -652,9 +665,9 @@
         <section class="product">
           <div class="pic">
             <picture class="product-preview">
-              <source media="(max-width: 640px)" srcset="../mq-diploma/images/shop-item-mobile3.jpg">
-              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="../mq-diploma/images/shop-item-tablet3.jpg">
-              <source media="(min-width: 1201px)" srcset="../mq-diploma/images/shop-item-desk3.jpg">
+              <source class="product-img" media="(max-width: 640px)" srcset="../mq-diploma/images/shop-item-mobile3.jpg">
+              <source class="product-img" media="(min-width: 641px) and (max-width: 1200px)" srcset="../mq-diploma/images/shop-item-tablet3.jpg">
+              <source class="product-img" media="(min-width: 1201px)" srcset="../mq-diploma/images/shop-item-desk3.jpg">
               <img class="product-img" src="../mq-diploma/images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
             </picture>
           </div>          
